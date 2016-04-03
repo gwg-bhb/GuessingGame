@@ -60,7 +60,7 @@
         
         AboutViewController *aboutVC = (AboutViewController *)segue.destinationViewController;
         
-        aboutVC.vc = self;
+        aboutVC.delegate = self;
         
         NSString *numberText = [NSString stringWithFormat:@"%d", self.number];
         [aboutVC updateSecretLabel:numberText];

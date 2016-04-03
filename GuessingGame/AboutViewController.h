@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
+//#import "ViewController.h"
 
 @protocol updateSecreTextDelegate <NSObject>
 
--(void) updateSecretText:(NSString *)secretText;
+- (void)updateSecretText:(NSString *)secretText;
 
 @end
 
@@ -20,5 +20,5 @@
 
 -(void) updateSecretLabel:(NSString *)number;
 
-@property (nonatomic, strong) ViewController *vc;
+@property (nonatomic, strong) id<updateSecreTextDelegate> delegate;
 @end

@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AboutViewController.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController<updateSecreTextDelegate>
 
 
 - (void)updateSecretText:(NSString *)secretText;

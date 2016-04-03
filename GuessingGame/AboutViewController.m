@@ -47,7 +47,7 @@
     [self.navigationController popViewControllerAnimated:YES];
 
     
-    [self.vc updateSecretText:self.secretNumber];
+    [self.delegate updateSecretText:self.secretNumber];
 }
 
 @end
